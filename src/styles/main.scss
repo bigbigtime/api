@@ -1,0 +1,45 @@
+@import "./normalize.scss";
+@import "./elementui.scss";
+body { font-size: 12px; color: #333; overflow: hidden; }
+html, body, #app, .el-container { height: 100%; }
+
+.svg-aside-icon { font-size: 15px; margin-right: 6px; }
+.api-aside-icon {
+    font-size: 18px;
+    margin-bottom: -6px;
+    color: #575757;
+}
+
+.api-name {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.api-info {
+    li {
+        display: inline-block;
+        padding: 7px 0;
+    }
+    .label { 
+        width: 85px;
+    }
+}
+
+.params-info {
+    padding: 30px 0 30px;
+    .title {
+        margin-bottom: 12px;
+        font-size: 14px;
+        font-weight: bold;
+        > span { margin-right: 15px; }
+    }
+    .table { margin-bottom: 20px; }
+    .code {
+        margin: 0;
+        padding: 15px 10px;
+        border: 1px solid #d1d5da;
+        border-radius: .4rem;
+        background-color: #f0f0f0;
+        white-space: pre-wrap;
+        line-height: 20px;
+    }
+}

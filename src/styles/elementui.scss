@@ -1,0 +1,34 @@
+#aside .el-scrollbar__wrap { overflow-x: hidden !important; }
+
+#aside .el-submenu__title {
+    color: rgb(169, 169, 169) !important;
+}
+.el-menu { 
+    border-right: none !important;
+    .is-active { background-color: #363636 !important; }
+}
+.el-menu-item, .el-submenu__title {
+    height: 44px !important;
+    line-height: 44px !important;
+    font-size: 12px !important;
+}
+.method {
+    display: inline-block;
+    transform: scale(.8);
+}
+.method.POST {
+    color: #eb5648;
+}
+
+.el-table {
+    th { font-weight: bold; color: #000;  }
+    th, td {
+        padding: 8px 0 !important;
+        >.cell {
+            font-size: 12px !important;
+        }
+    }
+}
+.params-info {
+    font-size: 12px !important;
+}
