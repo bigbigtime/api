@@ -14,14 +14,14 @@
             <el-submenu v-if="!item.hidden" :key="item.id" :index="index + ''">
               <!-- 一级菜单 -->
               <template slot="title">
-                <svg-icon :iconClass="item.meta.icon" className="svg-aside-icon" />
-                <span slot="title">{{ item.meta.title }}</span>
+                <svg-icon :iconClass="item.meta && item.meta.icon" className="svg-aside-icon" />
+                <span slot="title">{{ item.meta && item.meta.title }}</span>
               </template>
               <!-- 子级菜单 -->
               <template v-for="subItem in item.children">
                 <el-menu-item v-if="!subItem.hidden" :key="subItem.id" :index="subItem.path" >
-                  <span class="method" :class="subItem.meta.method">{{ subItem.meta.method }}</span>
-                  {{ subItem.meta.title }}
+                  <span class="method" :class="subItem.meta && subItem.meta.method">{{ subItem.meta && subItem.meta.method }}</span>
+                  {{ subItem.meta && subItem.meta.title }}
                 </el-menu-item>
               </template>
             </el-submenu>
@@ -37,7 +37,8 @@ export default {
    props: {},
    computed: {
        routers(){
-           return this.$router.options.routes
+         const router = this.$store.state.app.routers;
+           return router
        },
        defalutActive(){
         const route = this.$route;

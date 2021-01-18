@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 import Basis from "./modules/basis";
 import Account from "./modules/account";
 
-const routes = [
+const defaultRouterMap = [
   {
     path: '/',
     name: 'Layout',
@@ -22,13 +22,12 @@ const routes = [
         component: () => import("../views/home/Index"),
       },
     ]
-  },
-  Basis,
-  Account
+  }
 ]
 
 const router = new VueRouter({
-  routes
+  mode: 'hash',
+  routes: defaultRouterMap
 })
-
+console.log(router.options.routes)
 export default router

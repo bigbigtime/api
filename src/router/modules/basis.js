@@ -1,4 +1,5 @@
 import Layout from '../../layout/Index.vue'
+import Api from "../../views/Api";
 const basis = {
     path: '/basis',
     name: 'Basis',
@@ -16,12 +17,13 @@ const basis = {
             name: 'GetCode',
             meta: {
                 icon: "qq",
-                title: "获取验证码"
+                title: "获取验证码",
+                api: "getSms"
             },
             // route level code-splitting
             // this generates a separate chunk (about.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: Layout,
+            component: Api,
         }
     ]
 
