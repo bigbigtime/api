@@ -35,7 +35,6 @@ export default {
             sessionStorage.setItem("project", value);
         },
         createRouter(value){
-            
             // 获取路由
             const routers = this[value];
             this.$router.options.routes = routers;

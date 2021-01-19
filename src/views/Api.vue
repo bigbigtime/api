@@ -73,7 +73,7 @@ export default {
     },
     methods: {
         apiInfo(){
-            const project = localStorage.getItem("project");
+            const project = sessionStorage.getItem("project");
             const api = this.$route.meta.api;
             this.api_info = this[project][api];
         }

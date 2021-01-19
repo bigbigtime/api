@@ -7,7 +7,6 @@ const api = {
         request: [
             { key: "username", required: "true", type: "String", default: "", describe: "用户名（邮箱）" },
             { key: "module", required: "true", type: "String", default: "login", describe: "模块类型" }
-            						
         ],
         response: [
             { key: "code", type: "Number", describe: "验证码" },
