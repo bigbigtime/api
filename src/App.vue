@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import api_react from "@/api/react.js";
+import api_react from "@/api/react";
 import reactRouter from "@/router/react";
 export default {
     name: 'LayoutHeight',

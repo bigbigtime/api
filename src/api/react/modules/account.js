@@ -1,5 +1,5 @@
-const api = {
-    getSms: {
+const account = {
+    get_sms: {
         id: "loginCode",
         name: "登录获取验证码",
         method: "POST",
@@ -38,7 +38,8 @@ const api = {
     register: {
         id: "reg",
         name: "注册",
-        api: { type: "POST", url: "/register/" },
+        method: "POST",
+        url: "/register/",
         request: [
             { key: "username", required: "true", type: "String", default: "", describe: "用户名（邮箱）" },
             { key: "password", required: "true", type: "String", default: "", describe: "密码" },
@@ -86,5 +87,6 @@ const api = {
                     </ul>
                 }`
     }
-}
-export default api;
+};
+
+export default account;

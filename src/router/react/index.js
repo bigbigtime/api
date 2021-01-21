@@ -36,7 +36,7 @@ const routers = [
                 meta: {
                     title: "七牛云获取token",
                     method: "POST",
-                    api: "uploadIToken"
+                    api: "upload_token"
                 },
                 component: Api,
             }
@@ -58,7 +58,7 @@ const routers = [
                 meta: {
                     title: "获取验证码",
                     method: "POST",
-                    api: "getSms"
+                    api: "get_sms"
                 },
                 component: Api,
             },
@@ -101,7 +101,7 @@ const routers = [
                 meta: {
                     title: "部门列表（有分页）",
                     method: "POST",
-                    api: "departmentList"
+                    api: "department_list"
                 },
                 component: Api,
             },
@@ -111,7 +111,7 @@ const routers = [
                 meta: {
                     title: "部门列表 - 所有数据（无分页）",
                     method: "POST",
-                    api: "departmentListAll"
+                    api: "department_list_all"
                 },
                 component: Api,
             },
@@ -121,7 +121,7 @@ const routers = [
                 meta: {
                     title: "部门新增",
                     method: "POST",
-                    api: "departmentAdd"
+                    api: "department_add"
                 },
                 component: Api,
             },
@@ -131,7 +131,7 @@ const routers = [
                 meta: {
                     title: "部门修改",
                     method: "POST",
-                    api: "departmentEdit"
+                    api: "department_edit"
                 },
                 component: Api,
             },
@@ -141,7 +141,7 @@ const routers = [
                 meta: {
                     title: "部门禁启用",
                     method: "POST",
-                    api: "departmentStatus"
+                    api: "department_status"
                 },
                 component: Api,
             },
@@ -151,7 +151,7 @@ const routers = [
                 meta: {
                     title: "部门详情",
                     method: "POST",
-                    api: "departmentDetailed"
+                    api: "department_detailed"
                 },
                 component: Api,
             },
@@ -161,7 +161,7 @@ const routers = [
                 meta: {
                     title: "部门删除",
                     method: "POST",
-                    api: "departmentDelete"
+                    api: "department_delete"
                 },
                 component: Api,
             },
@@ -184,7 +184,7 @@ const routers = [
                 meta: {
                     title: "职位列表（有分页）",
                     method: "POST",
-                    api: "jobList"
+                    api: "job_list"
                 },
                 component: Api,
             },
@@ -194,7 +194,7 @@ const routers = [
                 meta: {
                     title: "职位列表 - 所有数据（无分页）",
                     method: "POST",
-                    api: "jobListAll"
+                    api: "job_list_all"
                 },
                 component: Api,
             },
@@ -204,7 +204,7 @@ const routers = [
                 meta: {
                     title: "职位新增",
                     method: "POST",
-                    api: "jobAdd"
+                    api: "job_add"
                 },
                 component: Api,
             },
@@ -214,7 +214,7 @@ const routers = [
                 meta: {
                     title: "职位修改",
                     method: "POST",
-                    api: "jobEdit"
+                    api: "job_edit"
                 },
                 component: Api,
             },
@@ -224,7 +224,7 @@ const routers = [
                 meta: {
                     title: "职位禁启用",
                     method: "POST",
-                    api: "jobStatus"
+                    api: "job_status"
                 },
                 component: Api,
             },
@@ -234,7 +234,7 @@ const routers = [
                 meta: {
                     title: "职位详情",
                     method: "POST",
-                    api: "jobDetailed"
+                    api: "job_detailed"
                 },
                 component: Api,
             },
@@ -244,7 +244,7 @@ const routers = [
                 meta: {
                     title: "职位删除",
                     method: "POST",
-                    api: "jobDelete"
+                    api: "job_delete"
                 },
                 component: Api,
             },
@@ -267,7 +267,7 @@ const routers = [
                 meta: {
                     title: "职员新增",
                     method: "POST",
-                    api: "staffAdd"
+                    api: "staff_add"
                 },
                 component: Api,
             }
@@ -290,7 +290,7 @@ const routers = [
                 meta: {
                     title: "用户列表",
                     method: "POST",
-                    api: "userList"
+                    api: "user_list"
                 },
                 component: Api,
             },
@@ -300,7 +300,7 @@ const routers = [
                 meta: {
                     title: "用户新增",
                     method: "POST",
-                    api: "userAdd"
+                    api: "user_add"
                 },
                 component: Api,
             },
@@ -310,7 +310,7 @@ const routers = [
                 meta: {
                     title: "用户修改",
                     method: "POST",
-                    api: "userEdit"
+                    api: "user_edit"
                 },
                 component: Api,
             },
@@ -320,7 +320,7 @@ const routers = [
                 meta: {
                     title: "用户禁启用",
                     method: "POST",
-                    api: "userStatus"
+                    api: "user_status"
                 },
                 component: Api,
             },
@@ -330,7 +330,7 @@ const routers = [
                 meta: {
                     title: "用户详情",
                     method: "POST",
-                    api: "userDetailed"
+                    api: "user_detailed"
                 },
                 component: Api,
             },
@@ -340,7 +340,7 @@ const routers = [
                 meta: {
                     title: "用户删除",
                     method: "POST",
-                    api: "userDelete"
+                    api: "user_delete"
                 },
                 component: Api,
             },

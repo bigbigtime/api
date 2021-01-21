@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import api_react from "@/api/react.js";
+import api_react from "@/api/react";
 export default {
     name: '',
     components: {},
@@ -64,13 +64,10 @@ export default {
             react: api_react,
             requestFlag: false,
             responseFlag: false,
-            tableDataRequest: [],
-            tableDataResponse: [],
-            requestCode: "",
-            responseCode: "",
             api_info: {}
         }
     },
+    created(){ this.apiInfo(); },
     methods: {
         apiInfo(){
             const project = sessionStorage.getItem("project");

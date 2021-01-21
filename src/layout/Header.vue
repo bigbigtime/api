@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import api_react from "@/api/react.js";
+import api_react from "@/api/react";
 import reactRouter from "@/router/react";
 export default {
     name: 'LayoutHeight',
@@ -18,21 +18,29 @@ export default {
     props: {},
     data(){
         return {
-            current: "",
+            current: "" || sessionStorage.getItem("project"),
             react: reactRouter,
             project: [
-                { name: "react", value: "react" },
-                { name: "vue3体验版", value: "vue3_test" },
-                { name: "vue3正式版", value: "vue3" },
+                { name: "React人事管理", value: "react" },
+                { name: "Vue3体验版管理后台", value: "vue3_test" },
+                { name: "Vue3正式版管理后台", value: "vue3" },
             ]
         }
     },
     methods: {
         handlerProject(data) {
             const value = data.value;
+            // 阻止
+            if(value == this.current) { return false; }
+            // 高光
             this.current = value;
-            this.createRouter(value);
+            // 存储
             sessionStorage.setItem("project", value);
+            // 删除存储
+            sessionStorage.removeItem("router");
+            sessionStorage.removeItem("path");
+            // 更新路由
+            this.createRouter(value);
         },
         createRouter(value){
             // 获取路由
